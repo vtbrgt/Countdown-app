@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6em;
+  gap: 5em;
 }
 
 .formulario {
@@ -31,6 +31,10 @@ body {
     height: 20px;
     bottom: -30px;
     color: #9597ff;
+  }
+  img {
+    width: 85px;
+    height: 85px;
   }
   #data {
     width: 20%;
