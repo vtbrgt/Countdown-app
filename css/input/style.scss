@@ -6,8 +6,9 @@ body {
   padding: 0;
   text-transform: none;
   height: 100vh;
+  width: 100vw;
   background: linear-gradient(180deg, #2a027e 75%, #9597ff);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   color: whitesmoke;
   font-family: 'Noto Sans', sans-serif;
   display: flex;
@@ -24,14 +25,6 @@ body {
   align-items: center;
   gap: 1em;
   font-size: 1.75rem;
-  .formulario::after {
-    content: 'a';
-    position: absolute;
-    width: 100vw;
-    height: 20px;
-    bottom: -30px;
-    color: #9597ff;
-  }
   img {
     width: 85px;
     height: 85px;
@@ -42,14 +35,13 @@ body {
   }
 }
 
-/* .formulario::after {
-  content: 'a';
-  position: absolute;
-  width: 100vw;
-  height: 20px;
-  bottom: -30px;
-  color: #9597ff;
-} */
+.formulario::after {
+  display: inline-block;
+  content: '';
+  width: 85vw;
+  height: 1px;
+  background: #9597ff;
+}
 
 #data::placeholder {
   text-align: center;
@@ -57,12 +49,14 @@ body {
 }
 .contador {
   display: flex;
+  //display: none;
   gap: 1.75em;
   div {
     text-align: center;
-    border: 1px solid #9597ff;
+    border: 1px solid #8b702c;
     border-radius: 10px;
     padding: 2rem 4rem;
+    box-shadow: 1px 1px 12px 4px #f4c44d;
     span {
       font-size: 54px;
       font-weight: 600;
@@ -70,5 +64,22 @@ body {
     p {
       font-size: 24px;
     }
+  }
+}
+
+.contador.ativo {
+  display: flex;
+  animation: show-up 0.8s forwards;
+}
+
+@keyframes show-up {
+  0% {
+    opacity: 0;
+    transform: translateY(250px) rotate(200deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
   }
 }
