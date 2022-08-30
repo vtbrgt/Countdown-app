@@ -34,6 +34,12 @@ body {
     width: 20%;
     height: 1.5em;
   }
+  .erro {
+    display: none;
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: underline wavy;
+  }
 }
 
 .formulario::after {
@@ -49,8 +55,7 @@ body {
   color: #2a027e;
 }
 .contador {
-  display: flex;
-  //display: none;
+  display: none;
   gap: 1.75em;
   div {
     text-align: center;

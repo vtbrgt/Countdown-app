@@ -41,7 +41,15 @@ body {
   height: 1.5em;
 }
 
-/* line 39, ../Projetos Pessoais/countdown/css/input/style.scss */
+/* line 37, ../Projetos Pessoais/countdown/css/input/style.scss */
+.formulario .erro {
+  display: none;
+  font-size: 1.5rem;
+  color: red;
+  text-decoration: underline wavy;
+}
+
+/* line 45, ../Projetos Pessoais/countdown/css/input/style.scss */
 .formulario::after {
   display: inline-block;
   content: '';
@@ -50,19 +58,19 @@ body {
   background: #9597ff;
 }
 
-/* line 47, ../Projetos Pessoais/countdown/css/input/style.scss */
+/* line 53, ../Projetos Pessoais/countdown/css/input/style.scss */
 #data::placeholder {
   text-align: center;
   color: #2a027e;
 }
 
-/* line 51, ../Projetos Pessoais/countdown/css/input/style.scss */
+/* line 57, ../Projetos Pessoais/countdown/css/input/style.scss */
 .contador {
-  display: flex;
+  display: none;
   gap: 1.75em;
 }
 
-/* line 55, ../Projetos Pessoais/countdown/css/input/style.scss */
+/* line 60, ../Projetos Pessoais/countdown/css/input/style.scss */
 .contador div {
   text-align: center;
   border: 1px solid #8b702c;
@@ -72,18 +80,18 @@ body {
   width: 90px;
 }
 
-/* line 62, ../Projetos Pessoais/countdown/css/input/style.scss */
+/* line 67, ../Projetos Pessoais/countdown/css/input/style.scss */
 .contador div span {
   font-size: 54px;
   font-weight: 600;
 }
 
-/* line 66, ../Projetos Pessoais/countdown/css/input/style.scss */
+/* line 71, ../Projetos Pessoais/countdown/css/input/style.scss */
 .contador div p {
   font-size: 24px;
 }
 
-/* line 72, ../Projetos Pessoais/countdown/css/input/style.scss */
+/* line 77, ../Projetos Pessoais/countdown/css/input/style.scss */
 .contador.ativo {
   display: flex;
   animation: show-up 0.8s forwards;
